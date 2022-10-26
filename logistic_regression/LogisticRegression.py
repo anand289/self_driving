@@ -16,7 +16,7 @@ def calculate_error(line_parameter, points, y):
     return cross_entropy
 
 def gradient_descent(line_parameter, points, y):
-    alpha = 0.1 # <-- alpha is the learning rate
+    alpha = 0.6 # <-- alpha is the learning rate
     m = y.shape[0]
     for i in range(2000):
         p = sigmoid(points*line_parameter)
@@ -45,5 +45,7 @@ y = np.array([np.zeros(n_pts),np.ones(n_pts)]).reshape(n_pts*2,1)
 _,ax = plt.subplots(figsize=(4,4))
 ax.scatter(top_region[:,0],top_region[:,1], color = 'r')
 ax.scatter(bottom_region[:,0],bottom_region[:,1], color = 'b')
+plt.xlim(all_points[:,0].min(),all_points[:,0].max())
+plt.ylim(all_points[:,1].min(),all_points[:,1].max())
 gradient_descent(line_parameter, all_points, y)
 plt.show()
