@@ -8,4 +8,4 @@ Self-driving tools like 'Lane Detection' and 'Traffic Signs Classification' usin
 4. Classifying Multi-class datasets (where data can be devided into more that two catagories) using.
 5. MNIST dataset classification using keras based Deep Neural Network. (Not CNN).
 6. MNIST dataset classification using keras based Convolution Neural Network.
-7. Classifying 49 classes of traffic signs using keras based Convolution Neural Network.
+7. Classifying 49 classes of traffic signs (From German Traffic Sign Recognition Benchmark [GTSRB]) using keras based Convolution Neural Network.
