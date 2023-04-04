@@ -1,3 +1,5 @@
+# Non-Max Suppression
+
 import json
 
 from utils import calculate_iou, check_results
